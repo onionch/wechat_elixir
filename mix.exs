@@ -3,8 +3,8 @@ defmodule Wechat.Mixfile do
 
   def project do
     [
-      app: :wechat,
-      version: "0.3.7",
+      app: :wechat_gugud,
+      version: "0.0.3",
       elixir: "~> 1.5",
       elixirc_options: [warnings_as_errors: true],
       build_embedded: Mix.env == :prod,
@@ -43,7 +43,7 @@ defmodule Wechat.Mixfile do
   defp deps do
     [
       {:httpoison, "~> 0.13"},
-      {:jason, "~> 1.0-rc"},
+      {:jason, "~> 1.0"},
       {:sweet_xml, "~> 0.6.5"},
       {:secure_random, "~> 0.5"},
       {:plug, "~> 1.0", optional: true},
@@ -64,10 +64,10 @@ defmodule Wechat.Mixfile do
 
   defp package do
     [
-      name: :wechat,
+      name: :wechat_gugud,
       licenses: ["MIT"],
-      maintainers: ["goofansu"],
-      links: %{"Github" => "https://github.com/goofansu/wechat_elixir"}
+      maintainers: ["onionch"],
+      links: %{"Github" => "https://github.com/onionch/wechat_elixir"}
     ]
   end
 end

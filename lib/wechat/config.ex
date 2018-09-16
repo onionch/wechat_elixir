@@ -8,7 +8,7 @@ defmodule Wechat.Config do
   ]
 
   def config do
-    Keyword.merge(@default_config, Application.get_all_env(:wechat))
+    Keyword.merge(@default_config, Application.get_all_env(:wechat_gugud))
   end
 
   @keys ~w(appid secret token encoding_aes_key)a

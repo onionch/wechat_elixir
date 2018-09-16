@@ -13,4 +13,13 @@ defmodule Wechat.SNS do
       grant_type: "authorization_code",
     }
   end
+
+  def oauth2accesstoken(code) do
+    get "oauth2/access_token", %{
+      appid: Config.appid,
+      secret: Config.secret,
+      code: code,
+      grant_type: "authorization_code",
+    }
+  end
 end
